@@ -9,6 +9,7 @@ local threads = {}
 local connections = {}
 
 -- // CONFIGURATION
+local PERMANENT_KEY = "clar-ap" 
 local DISCORD_INVITE = "https://discord.gg/8fepRqK7CH"
 
 -- // DAILY KEY GENERATOR
@@ -232,7 +233,7 @@ end)
 
 confirmBtn.MouseButton1Click:Connect(function()
     local userKey = keyInput.Text
-    if userKey == DAILY_KEY then
+    if userKey == PERMANENT_KEY or userKey == DAILY_KEY then
         keyGui:Destroy()
         gui.Enabled = true
     else
@@ -252,3 +253,5 @@ discordBtn.MouseButton1Click:Connect(function()
         discordBtn.Text = "Unsupported Exec"
     end
 end)
+
+obfuskuj mi sve sem glavne funkcije
