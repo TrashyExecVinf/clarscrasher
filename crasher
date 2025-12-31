@@ -14,7 +14,7 @@ local DISCORD_INVITE = "https://discord.gg/8fepRqK7CH"
 -- // DAILY KEY GENERATOR
 local function getDailyKey()
     local date = os.date("!*t") -- UTC Time
-    return "clar-" .. date.day .. date.month -- Generates e.g. clar-3112
+    return "clar-" .. date.day .. date.month
 end
 local DAILY_KEY = getDailyKey()
 
