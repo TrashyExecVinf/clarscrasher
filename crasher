@@ -232,7 +232,7 @@ end)
 
 confirmBtn.MouseButton1Click:Connect(function()
     local userKey = keyInput.Text
-    if userKey == userKey == DAILY_KEY then
+    if userKey == DAILY_KEY then
         keyGui:Destroy()
         gui.Enabled = true
     else
