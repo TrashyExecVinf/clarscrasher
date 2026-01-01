@@ -253,5 +253,3 @@ discordBtn.MouseButton1Click:Connect(function()
         discordBtn.Text = "Unsupported Exec"
     end
 end)
-
-obfuskuj mi sve sem glavne funkcije
